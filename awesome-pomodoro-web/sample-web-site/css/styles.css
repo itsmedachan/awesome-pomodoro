@@ -41,32 +41,17 @@ header h1 {
 }
 
 header .container {
-  /* background: pink; */
   position: relative;
-}
-
-header img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .timers {
   width: 100%;
 }
 
-.tomato-timer {
-  /* height: 300px; */
+.tomato-timers {
   width: 100%;
   display: flex;
   margin: 10px;
-}
-
-.coffee-timer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  /* padding: 10px; */
 }
 
 .tomato {
@@ -83,6 +68,10 @@ header img {
   cursor: pointer;
 }
 
+.tomato:active {
+  opacity: 0.7;
+}
+
 .tomato p {
   position: absolute;
   top: 60%;
@@ -95,40 +84,39 @@ header img {
   font-weight: bold;
   font-size: 4vw;
   cursor: pointer;
+  user-select: none;
+}
+
+.coffee-timers {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .coffee {
   text-align: center;
-  margin-top: 10px;
+  width: 50%;
+  margin: 0 auto;
   position: relative;
 }
 
-.coffee5 {
+.coffee:active {
+  opacity: 0.7;
+}
+
+.coffee img {
   display: inline-block;
   flex: auto;
   height: 75%;
-  /* max-width: 100%; */
   width: 45%;
-  margin-left: 40%;
-  margin-right: 15%;
   cursor: pointer;
 }
 
-.coffee10 {
-  display: inline-block;
-  flex: auto;
-  height: 75%;
-  /* max-width: 100%; */
-  width: 45%;
-  margin-left: 15%;
-  margin-right: 40%;
-  cursor: pointer;
-}
-
-.coffee5-text {
+.coffee p {
   position: absolute;
-  top: 42%;
-  left: 58%;
+  top: 43%;
+  left: 45%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -137,22 +125,8 @@ header img {
   font-weight: bold;
   font-size: 3vw;
   cursor: pointer;
+  user-select: none;
 }
-
-.coffee10-text {
-  position: absolute;
-  top: 42%;
-  left: 34%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
-  font-weight: bold;
-  font-size: 3vw;
-  cursor: pointer;
-}
-
 
 footer {
   padding: 40px 0;
